@@ -1,10 +1,14 @@
 package resources.pojos;
 
 public class UserApp {
-    String username;
-    String password;
-    String email;
-    String role;
+    private String username;
+    private String password;
+    private String email;
+    private String role;
+
+    public UserApp(){
+
+    }
 
     public UserApp(String username, String password, String email, String role) {
         this.username = username;
