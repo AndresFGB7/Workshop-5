@@ -13,6 +13,7 @@ public class UserApp {
         this.role = role;
     }
 
+
     public String getUsername() {
         return username;
     }
