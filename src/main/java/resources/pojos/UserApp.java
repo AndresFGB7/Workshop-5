@@ -6,6 +6,10 @@ public class UserApp {
     String email;
     String role;
 
+    public UserApp(){
+
+    }
+
     public UserApp(String username, String password, String email, String role) {
         this.username = username;
         this.password = password;
