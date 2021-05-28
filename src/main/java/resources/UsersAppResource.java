@@ -2,7 +2,7 @@ package resources;
 
 import javax.ws.rs.Path;
 
-@Path("/owner/{username}")
+@Path("/ownersgit ")
 public class UsersAppResource {
 
 }
