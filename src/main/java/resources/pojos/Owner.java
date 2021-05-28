@@ -1,11 +1,11 @@
 package resources.pojos;
 
 public class Owner {
-    String username;
-    Integer person_id;
-    String name;
-    String address;
-    String neighborhood;
+    private String username;
+    private Integer person_id;
+    private String name;
+    private String address;
+    private String neighborhood;
 
     public Owner(){
 
