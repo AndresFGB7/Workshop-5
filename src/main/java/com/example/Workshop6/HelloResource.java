@@ -1,4 +1,4 @@
-package com.example.Workshop32322;
+package com.example.Workshop6;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
