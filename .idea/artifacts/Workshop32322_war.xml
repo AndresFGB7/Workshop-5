@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Workshop32322:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Workshop32322</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Workshop32322-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Workshop32322:war exploded" />
+    </root>
+  </artifact>
+</component>
