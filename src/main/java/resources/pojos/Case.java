@@ -19,7 +19,7 @@ public class Case {
     }
 
     public Case () {
-        
+
     }
 
     public int getCase_id() {
