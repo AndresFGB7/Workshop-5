@@ -1,21 +1,23 @@
 package resources;
 
+import resources.pojos.Owner;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/authors/{username}")
+@Path("/User/{username}/Owner/{person_id}")
 
 public class OwnerResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response modify(@PathParam("username") String id, Integer person_id) {
+    public Response modify(@PathParam("person_id") Integer id, Owner owner) {
         return Response.ok()
-                .entity(id)
+                .entity(owner)
                 .build();
     }
     @DELETE
-    public Response delete(@PathParam("username") String id) {
+    public Response delete(@PathParam("person_id") Integer id) {
 
         return Response.noContent()
                 .build();

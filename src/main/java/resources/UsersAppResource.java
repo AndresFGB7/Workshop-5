@@ -1,6 +1,7 @@
 package resources;
 
 import resources.pojos.Owner;
+import resources.pojos.UserApp;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -14,10 +15,16 @@ public class UsersAppResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response list() {
 
-        List<Owner> owners = new ArrayList<Owner>();
+        List<UserApp> usersapp = new ArrayList<UserApp>();
+
+        usersapp.add(new UserApp("cdsanchezm", "Cristian123", "cdsanchezm@unbosque.edu.co", "vet"));
+        usersapp.add(new UserApp("agalvezb", "Andres123", "escriba sus correos vagos", "Owner"));
+        usersapp.add(new UserApp("lcardenasc", "Estebanc123", "escriba sus correos vagos", "Owner"));
+        usersapp.add(new UserApp("panayar", "Pau123", "escriba sus correos vagos", "official"));
+        usersapp.add(new UserApp("euribec", "Estebanu123", "escriba sus correos vagos", "vet"));
 
         return Response.ok()
-                .entity(owners)
+                .entity(usersapp)
                 .build();
     }
 

@@ -1,5 +1,7 @@
 package resources;
 
+import resources.pojos.UserApp;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -8,7 +10,7 @@ import javax.ws.rs.core.Response;
 public class UserAppResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response modify(@PathParam("username") String id, Integer person_id) {
+    public Response modify(@PathParam("username") String id, UserApp usersapp) {
         return Response.ok()
                 .entity(id)
                 .build();
