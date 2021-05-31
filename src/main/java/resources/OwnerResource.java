@@ -9,15 +9,15 @@ import javax.ws.rs.core.Response;
 @Path("/User/{username}/Owner/{person_id}")
 
 public class OwnerResource {
-    @GET
+    @PUT
     @Produces(MediaType.APPLICATION_JSON)
-    public Response modify(@PathParam("person_id") Integer id, Owner owner) {
+    public Response modify(@PathParam("username") String Username,  @PathParam("person_id") Integer id, Owner owner) {
         return Response.ok()
                 .entity(owner)
                 .build();
     }
     @DELETE
-    public Response delete(@PathParam("person_id") Integer id) {
+    public Response delete( @PathParam("person_id") Integer id) {
 
         return Response.noContent()
                 .build();

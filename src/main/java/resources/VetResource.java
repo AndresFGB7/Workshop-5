@@ -10,7 +10,7 @@ import javax.ws.rs.core.Response;
 @Path("/User/{username}/vets/{username}")
 
 public class VetResource {
-    @GET
+    @PUT
     @Produces(MediaType.APPLICATION_JSON)
     public Response modify(@PathParam("username") String Username, @PathParam("username") String Username2, Vet vet) {
         return Response.ok()

@@ -10,7 +10,7 @@ import javax.ws.rs.core.Response;
 @Path("/pet/{pet_id}/cases/{case_id}")
 public class CaseResource {
 
-    @GET
+    @PUT
     @Produces(MediaType.APPLICATION_JSON)
     public Response modify(@PathParam("pet_id") Integer Petid, @PathParam("case_id") Integer Caseid, Case cas) {
         return Response.ok()

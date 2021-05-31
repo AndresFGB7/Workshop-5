@@ -14,6 +14,10 @@ public class Pet {
     private String picture;
     private Integer owner_id;
 
+    public Pet (){
+
+    }
+
     public Pet(Integer pet_id, String microship, String name, String species, String race, String size, String sex, String picture, Integer owner_id) {
         this.pet_id = pet_id;
         this.microship = microship;

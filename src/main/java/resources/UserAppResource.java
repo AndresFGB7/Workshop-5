@@ -8,7 +8,7 @@ import javax.ws.rs.core.Response;
 
 @Path("/User/{username}")
 public class UserAppResource {
-    @GET
+    @PUT
     @Produces(MediaType.APPLICATION_JSON)
     public Response modify(@PathParam("username") String id, UserApp usersapp) {
         return Response.ok()
