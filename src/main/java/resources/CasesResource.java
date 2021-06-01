@@ -15,10 +15,10 @@ public class CasesResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response list(@PathParam("pet_id") Integer Petid, Date date) {
+    public Response list(@PathParam("pet_id") Integer Petid) {
 
         List<Case> cases = new ArrayList<Case>();
-        cases.add(new Case(1, date, "robo", "me robaron mi perro",Petid));
+        cases.add(new Case(1, "2021-05-31", "robo", "me robaron mi perro",Petid));
 
 
         return Response.ok()

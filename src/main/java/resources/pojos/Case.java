@@ -5,12 +5,12 @@ import java.util.Date;
 public class Case {
 
     private int case_id;
-    private Date Created_at;
+    private String Created_at;
     private String type;
     private String description;
     private int pet_id;
 
-    public Case(int case_id, Date created_at, String type, String description, int pet_id) {
+    public Case(int case_id, String created_at, String type, String description, int pet_id) {
         this.case_id = case_id;
         Created_at = created_at;
         this.type = type;
@@ -30,11 +30,11 @@ public class Case {
         this.case_id = case_id;
     }
 
-    public Date getCreated_at() {
+    public String getCreated_at() {
         return Created_at;
     }
 
-    public void setCreated_at(Date created_at) {
+    public void setCreated_at(String created_at) {
         Created_at = created_at;
     }
 
