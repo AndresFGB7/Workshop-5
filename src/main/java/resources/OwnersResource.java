@@ -40,6 +40,7 @@ public class OwnersResource {
                 .build();
     }
     @POST
+    @Path("/User/{username}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response create(@PathParam("username") String Username, Owner owner) {
