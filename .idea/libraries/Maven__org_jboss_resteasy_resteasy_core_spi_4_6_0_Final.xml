@@ -1,13 +1,13 @@
 <component name="libraryTable">
-  <library name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.11.4">
+  <library name="Maven: org.jboss.resteasy:resteasy-core-spi:4.6.0.Final">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.11.4/jackson-jaxrs-json-provider-2.11.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-core-spi/4.6.0.Final/resteasy-core-spi-4.6.0.Final.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.11.4/jackson-jaxrs-json-provider-2.11.4-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-core-spi/4.6.0.Final/resteasy-core-spi-4.6.0.Final-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.11.4/jackson-jaxrs-json-provider-2.11.4-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-core-spi/4.6.0.Final/resteasy-core-spi-4.6.0.Final-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
