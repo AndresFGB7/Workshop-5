@@ -9,6 +9,11 @@ public class Case {
     private String type;
     private String description;
     private int pet_id;
+    private int totalCases;
+
+    public Case () {
+
+    }
 
     public Case(int case_id, String created_at, String type, String description, int pet_id) {
         this.case_id = case_id;
@@ -18,9 +23,13 @@ public class Case {
         this.pet_id = pet_id;
     }
 
-    public Case () {
 
+    public Case (String type, int totalCases){
+        //este es para obtener las visitas en cases
+        this.type = type;
+        this.totalCases = totalCases;
     }
+
 
     public int getCase_id() {
         return case_id;
@@ -60,5 +69,13 @@ public class Case {
 
     public void setPet_id(int pet_id) {
         this.pet_id = pet_id;
+    }
+
+    public int getTotalCases() {
+        return totalCases;
+    }
+
+    public void setTotalCases(int totalCases) {
+        this.totalCases = totalCases;
     }
 }

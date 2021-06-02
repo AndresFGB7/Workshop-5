@@ -1,13 +1,13 @@
 <component name="libraryTable">
-  <library name="Maven: org.jboss.resteasy:resteasy-servlet-initializer:4.6.0.Final">
+  <library name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.11.4">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-servlet-initializer/4.6.0.Final/resteasy-servlet-initializer-4.6.0.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.4/jackson-module-jaxb-annotations-2.11.4.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-servlet-initializer/4.6.0.Final/resteasy-servlet-initializer-4.6.0.Final-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.4/jackson-module-jaxb-annotations-2.11.4-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-servlet-initializer/4.6.0.Final/resteasy-servlet-initializer-4.6.0.Final-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.4/jackson-module-jaxb-annotations-2.11.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

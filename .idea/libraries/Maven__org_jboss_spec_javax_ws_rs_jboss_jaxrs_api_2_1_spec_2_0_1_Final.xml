@@ -1,13 +1,13 @@
 <component name="libraryTable">
-  <library name="Maven: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec:2.0.1.Final">
+  <library name="Maven: com.github.java-json-tools:msg-simple:1.2">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/2.0.1.Final/jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/2.0.1.Final/jboss-jaxrs-api_2.1_spec-2.0.1.Final-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/2.0.1.Final/jboss-jaxrs-api_2.1_spec-2.0.1.Final-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
