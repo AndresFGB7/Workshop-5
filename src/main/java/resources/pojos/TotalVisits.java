@@ -5,14 +5,14 @@ import java.util.List;
 public class TotalVisits {
 
     private Integer totalVisits;
-    private List<Visit> visitByType;
-    private List<Visit> visitByVet;
+    private List<VisitType> visitByType;
+    private List<VisitByVet> visitByVet;
 
     public TotalVisits() {
     }
 
 
-    public TotalVisits ( List<Visit> visitByType, List<Visit> visitByVet , Integer totalVisits){
+    public TotalVisits ( List<VisitType> visitByType, List<VisitByVet> visitByVet , Integer totalVisits){
 
         this.totalVisits = totalVisits;
         this.visitByType = visitByType;
@@ -28,19 +28,19 @@ public class TotalVisits {
         this.totalVisits = totalVisits;
     }
 
-    public List<Visit> getVisitByType() {
+    public List<VisitType> getVisitByType() {
         return visitByType;
     }
 
-    public void setVisitByType(List<Visit> visitByType) {
+    public void setVisitByType(List<VisitType> visitByType) {
         this.visitByType = visitByType;
     }
 
-    public List<Visit> getVisitByVet() {
+    public List<VisitByVet> getVisitByVet() {
         return visitByVet;
     }
 
-    public void setVisitByVet(List<Visit> visitByVet) {
+    public void setVisitByVet(List<VisitByVet> visitByVet) {
         this.visitByVet = visitByVet;
     }
 }

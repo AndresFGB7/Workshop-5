@@ -1,7 +1,6 @@
 package resources.pojos;
 
 
-
 import java.util.Date;
 
 public class Visit {
@@ -12,10 +11,6 @@ public class Visit {
     private String description;
     private Integer vet_id;
     private Integer pet_id;
-    private Integer totalVisits;
-    private Integer totalVisitsByVet;
-    private String username;
-
 
 
     public Visit(Integer visit_id, String created_at, String type, String description, Integer vet_id, Integer pet_id) {
@@ -25,19 +20,6 @@ public class Visit {
         this.description = description;
         this.vet_id = vet_id;
         this.pet_id = pet_id;
-    }
-
-    public Visit (Integer totalVisits , String type){
-      //este es para contar las visitas de type
-      this.totalVisits = totalVisits;
-      this.type = type;
-    }
-
-    public Visit ( String username ,Integer totalVisitsByVet ){
-        //este es para contar las visitas de Vet
-        this.totalVisitsByVet = totalVisitsByVet;
-        this.username = username;
-
     }
 
 
@@ -89,11 +71,5 @@ public class Visit {
         this.pet_id = pet_id;
     }
 
-    public Integer getTotalVisits() {
-        return totalVisits;
-    }
 
-    public void setTotalVisits(Integer totalVisits) {
-        this.totalVisits = totalVisits;
-    }
 }

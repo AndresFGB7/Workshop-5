@@ -1,6 +1,7 @@
 package resources;
 
 import resources.pojos.Case;
+import resources.pojos.CaseType;
 import resources.pojos.TotalCases;
 import resources.pojos.Vet;
 
@@ -33,13 +34,13 @@ public class CasesResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response listCasesByType() {
 
-        List<Case> casesByType = new ArrayList<Case>();
+        List<CaseType> casesByType = new ArrayList<CaseType>();
 
-        casesByType.add(new Case("Perdida", 30));
-        casesByType.add(new Case("robo ", 12));
-        casesByType.add(new Case("fallecimiento", 40));
+        casesByType.add(new CaseType("Perdida", 30));
+        casesByType.add(new CaseType("robo ", 12));
+        casesByType.add(new CaseType("fallecimiento", 40));
 
-        TotalCases totalCasesByType = new TotalCases( casesByType, 82);
+        TotalCases totalCasesByType = new TotalCases( casesByType , 82);
 
         return Response.ok()
                 .entity(totalCasesByType)
