@@ -2,6 +2,7 @@ package resources;
 
 import resources.pojos.ComparatorLocation;
 import resources.pojos.Owner;
+import resources.pojos.Pet;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -49,6 +50,35 @@ public class OwnersResource {
 
         return Response.status(Response.Status.CREATED)
                 .entity(owner)
+                .build();
+    }
+    @GET
+    @Path("/Location/User/{username}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response listP(@PathParam("username") int ownerId, String value, int filter){
+
+        List<Pet> pets = new ArrayList<Pet>();
+        Random random = new Random();
+
+        String[] size = {"grande", "pequeño", "mediano", "muy grande"};
+        String[] specie = {"perro", "gato"};
+        String[] sex = {"femenino", "masculino"};
+        String[] names = {"json", "stan", "masacre", "danger", "aslan", "tayson", "galleta", "copito"};
+
+        for (int i=0; i<20; i++){
+            int id = random.nextInt(10000);
+
+            if (i%2 == 0){
+                pets.add(new Pet(1, "1234567891", "pet" + i, specie[random.nextInt(specie.length)], "pet_race",
+                        size[random.nextInt(size.length)], sex[random.nextInt(sex.length)], "null", ownerId ));
+            }else{
+                pets.add(new Pet(1, String.valueOf(random.nextLong()), names[random.nextInt(names.length)], specie[random.nextInt(specie.length)], "pet_race",
+                        size[random.nextInt(size.length)], sex[random.nextInt(sex.length)], "null", ownerId ));
+            }
+        }
+        return Response.ok()
+                .entity(pets)
                 .build();
     }
 
