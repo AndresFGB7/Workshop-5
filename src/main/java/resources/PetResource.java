@@ -23,7 +23,7 @@ import java.io.FileOutputStream;
 
 
 public class PetResource {
-    final String UPLOAD_FILE_SERVER = "C:\\";
+    final String UPLOAD_FILE_SERVER = "upload";
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
     public Response modify(@PathParam("owner_id") Integer id, @PathParam("pet_id") Integer petid, Pet pet) {
