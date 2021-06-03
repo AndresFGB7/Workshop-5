@@ -12,15 +12,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Path("/pet/{pet_id}/cases")
+@Path("cases")
 public class CasesResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response list(@PathParam("pet_id") Integer Petid) {
+    public Response list() {
 
         List<Case> cases = new ArrayList<Case>();
-        cases.add(new Case(1, "2021-05-31", "robo", "me robaron mi perro", Petid));
+        cases.add(new Case(1, "2021-05-31", "robo", "me robaron mi perro", 1));
 
 
         return Response.ok()
@@ -51,7 +51,7 @@ public class CasesResource {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response create(@PathParam("pet_id") Integer Petid, Case cases) {
+    public Response create(Case cases) {
 
         cases.setCase_id(2);
         return Response.status(Response.Status.CREATED)
