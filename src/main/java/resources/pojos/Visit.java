@@ -22,6 +22,10 @@ public class Visit {
         this.pet_id = pet_id;
     }
 
+    public Visit() {
+
+    }
+
 
     public Integer getVisit_id() {
         return visit_id;

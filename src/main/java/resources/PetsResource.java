@@ -35,7 +35,6 @@ public class PetsResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response create(@PathParam("owner_id") Integer id , Pet pet) {
 
-
         return Response.status(Response.Status.CREATED)
                 .entity(pet)
                 .build();

@@ -7,9 +7,9 @@ public class Owner {
     private String address;
     private String neighborhood;
 
-public  Owner(){
+    public  Owner(){
 
-}
+    }
 
     public Owner(String username, Integer person_id, String name, String address, String neighborhood) {
         this.username = username;
