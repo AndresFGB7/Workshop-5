@@ -1,7 +1,6 @@
 package resources;
 
-import resources.pojos.Pet;
-import resources.pojos.Visit;
+import resources.pojos.*;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -26,6 +25,36 @@ public class VisitsResource {
                 .entity(visitsList)
                 .build();
     }
+
+    @GET
+    @Path("/visit")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listTotalVisits () {
+
+        List<VisitType> visitsByType = new ArrayList<>();
+
+
+        visitsByType.add(new VisitType(20,"Implantacion"));
+        visitsByType.add(new VisitType(10 , "Desparasitación"));
+        visitsByType.add(new VisitType(18 , "Control"));
+        visitsByType.add(new VisitType(8 , "Vacunación"));
+        visitsByType.add(new VisitType(1 , "Implantación de microchip"));
+        visitsByType.add(new VisitType(12 , "Urgencia"));
+
+        List<VisitByVet> visitsByVet = new ArrayList<>();
+
+        visitsByVet.add(new VisitByVet("Vet.Andres" , 3));
+        visitsByVet.add(new VisitByVet("Vet.Paula" , 12));
+        visitsByVet.add(new VisitByVet("Vet.Esteban" , 11));
+        visitsByVet.add(new VisitByVet("Vet.Cristian" , 20));
+
+        TotalVisits totalVisits = new TotalVisits(visitsByType, visitsByVet ,115);
+
+        return Response.ok()
+                .entity(totalVisits)
+                .build();
+    }
+
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)

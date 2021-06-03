@@ -1,7 +1,6 @@
 package resources.pojos;
 
 
-
 import java.util.Date;
 
 public class Visit {
@@ -13,9 +12,6 @@ public class Visit {
     private Integer vet_id;
     private Integer pet_id;
 
-  public Visit(){
-
-  }
 
     public Visit(Integer visit_id, String created_at, String type, String description, Integer vet_id, Integer pet_id) {
         this.visit_id = visit_id;
@@ -25,9 +21,6 @@ public class Visit {
         this.vet_id = vet_id;
         this.pet_id = pet_id;
     }
-
-
-
 
 
     public Integer getVisit_id() {
@@ -77,4 +70,6 @@ public class Visit {
     public void setPet_id(Integer pet_id) {
         this.pet_id = pet_id;
     }
+
+
 }

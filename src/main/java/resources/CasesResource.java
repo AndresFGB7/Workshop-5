@@ -1,6 +1,8 @@
 package resources;
 
 import resources.pojos.Case;
+import resources.pojos.CaseType;
+import resources.pojos.TotalCases;
 import resources.pojos.Vet;
 
 import javax.ws.rs.*;
@@ -18,13 +20,33 @@ public class CasesResource {
     public Response list(@PathParam("pet_id") Integer Petid) {
 
         List<Case> cases = new ArrayList<Case>();
-        cases.add(new Case(1, "2021-05-31", "robo", "me robaron mi perro",Petid));
+        cases.add(new Case(1, "2021-05-31", "robo", "me robaron mi perro", Petid));
 
 
         return Response.ok()
                 .entity(cases)
                 .build();
     }
+
+
+    @GET
+    @Path("/cases")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listCasesByType() {
+
+        List<CaseType> casesByType = new ArrayList<CaseType>();
+
+        casesByType.add(new CaseType("Perdida", 30));
+        casesByType.add(new CaseType("robo ", 12));
+        casesByType.add(new CaseType("fallecimiento", 40));
+
+        TotalCases totalCasesByType = new TotalCases( casesByType , 82);
+
+        return Response.ok()
+                .entity(totalCasesByType)
+                .build();
+    }
+
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
