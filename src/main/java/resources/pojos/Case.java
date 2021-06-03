@@ -9,7 +9,7 @@ public class Case {
     private String type;
     private String description;
     private int pet_id;
-    private int totalCases;
+
 
     public Case () {
 
@@ -21,13 +21,6 @@ public class Case {
         this.type = type;
         this.description = description;
         this.pet_id = pet_id;
-    }
-
-
-    public Case (String type, int totalCases){
-        //este es para obtener las visitas en cases
-        this.type = type;
-        this.totalCases = totalCases;
     }
 
 
@@ -71,11 +64,4 @@ public class Case {
         this.pet_id = pet_id;
     }
 
-    public int getTotalCases() {
-        return totalCases;
-    }
-
-    public void setTotalCases(int totalCases) {
-        this.totalCases = totalCases;
-    }
 }
