@@ -8,7 +8,7 @@
 ## Descripción 🔥
 En este taller se desarrollo una API que siga los principios arquitecturales de REST para manipular la base de datos y que soporte diferentes requerimientos, creando recursos y métodos necesarios con datos dummy.
 
-## Link descarga archivo json 
+## Link descarga archivo json Postman
 https://drive.google.com/drive/folders/1ZDq1cyicaUedYgaeLyijLNip60eWyiZy?usp=sharing
 
 ## Lenguajes 📋
