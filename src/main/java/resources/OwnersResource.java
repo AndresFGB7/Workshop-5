@@ -25,7 +25,6 @@ public class OwnersResource {
                 .build();
     }
     @GET
-    //@Path("/Location")
     @Path("/Location/User/{username}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response listz(@PathParam("username") String Username) {

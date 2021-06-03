@@ -43,28 +43,24 @@ public class PetResource {
     @POST
     @Path("/upload")
     @Consumes(MediaType.MULTIPART_FORM_DATA)
-    public Response uploadImageFile(
-            @FormDataParam("fichero") InputStream fileInputStream,
-            @FormDataParam("fichero") File fileFormDataContentDisposition) {
+    public Response uploadImageFile(@FormDataParam("fichero") InputStream fileInputStream, @FormDataParam("fichero") File fileFormDataContentDisposition) {
 
         String fileName = null;
         String uploadFilePath = null;
 
         try {
-
             fileName = fileFormDataContentDisposition.getName();
             uploadFilePath = writeToFileServer(fileInputStream, fileName);
         } catch (IOException ioe) {
             ioe.printStackTrace();
         } finally {
         }
-        return Response.ok("Fichero subido a " + uploadFilePath).build();
+        return Response.ok("Fichero subido de forma exitosa en formato de bytes a: " + uploadFilePath).build();
     }
 
     private String writeToFileServer(InputStream inputStream, String fileName) throws IOException {
 
         OutputStream outputStream = null;
-        System.out.println(UPLOAD_FILE_SERVER+fileName);
         String qualifiedUploadFilePath = UPLOAD_FILE_SERVER +fileName;
 
         try {
@@ -80,18 +76,19 @@ public class PetResource {
         } finally {
             outputStream.close();
         }
-        return qualifiedUploadFilePath;
+        return UPLOAD_FILE_SERVER;
     }
+    //NO FUNCIONA
+    /*
     @POST
     @Path("/upload2")
     @Consumes({MediaType.MULTIPART_FORM_DATA})
     public Response uploadFileWithData(@FormDataParam("ficheroa") InputStream fileInputStream, @FormDataParam("ficheroa") File File2)throws Exception{
-        System.out.println("hola");
-        System.out.println(fileInputStream);
         Image img = ImageIO.read(File2);
         JOptionPane.showMessageDialog(null, new JLabel(new ImageIcon(img)));
 
         return Response.ok("Cool Tools!").build();
     }
+    */
 }
 
